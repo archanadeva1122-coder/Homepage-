@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Gmail</a>
+            <a href="#">Images</a>
+            <button class="sign-in">Sign in</button>
+        </nav>
+    </header>
+
+    <main>
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo" class="logo">
+        
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text">
+            <span class="mic-icon">🎤</span>
+        </div>
+
+        <div class="buttons">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+
+        <p class="language">Google offered in: <a href="#">हिन्दी</a> <a href="#">বাংলা</a> <a href="#">తెలుగు</a></p>
+    </main>
+
+    <footer>
+        <div class="footer-top">India</div>
+        <div class="footer-bottom">
+            <div class="links-left">
+                <a href="#">About</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </div>
+            <div class="links-right">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+    font-size: 13px;
+    margin-right: 15px;
+}
+
+nav a:hover { text-decoration: underline; }
+
+.sign-in {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 9px 23px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Main Search Area */
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.logo {
+    width: 272px;
+    margin-bottom: 30px;
+}
+
+.search-container {
+    width: 584px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search-container:hover {
+    box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.search-container input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.buttons button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    padding: 10px 16px;
+    margin: 0 5px;
+    border-radius: 4px;
+    color: #3c4043;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.language {
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+.language a {
+    color: #1a0dab;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #f2f2f2;
+    color: rgba(0,0,0,0.54);
+}
+
+.footer-top {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 25px;
+    font-size: 14px;
+}
+
+OUTPUT :
+Gmail   Images   [Sign in]
+
+                          GOOGLE LOGO
+
+                🔍  [ Search here............. ] 🎤
+
+                 [ Google Search ] [ I'm Feeling Lucky ]
+
+        Google offered in: हिन्दी বাংলা తెలుగు
+
+
+---------------------------------------------------------
+India
+
+About  Advertising  Business  How Search works
+                        Privacy  Terms  Settings
+---------------------------------------------------------
